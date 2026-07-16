@@ -4,73 +4,42 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Aylin Education | Русский язык для детей</title>
+<title>Aylin Education</title>
 
-<meta name="description"
-content="Aylin Education — обучение русскому языку для детей с нуля.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="preconnect"
-href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="preconnect"
-href="https://fonts.gstatic.com"
-crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-<link rel="stylesheet"
-href="style.css">
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<div class="background">
-
-<div class="blob blob1"></div>
-
-<div class="blob blob2"></div>
-
-<div class="blob blob3"></div>
-
-</div>
+<div class="bg"></div>
 
 <header>
 
-<div class="container">
+<div class="container navbar">
 
 <a href="#" class="logo">
 
-<svg width="54" height="54" viewBox="0 0 100 100">
+<div class="logo-box">
 
-<circle cx="50" cy="50" r="45" fill="#F4C430"/>
+A
 
-<text x="50"
-y="60"
-font-size="38"
-font-family="Montserrat"
-font-weight="800"
-text-anchor="middle"
-fill="#222">
+</div>
 
-AE
-
-</text>
-
-</svg>
-
-<div>
+<div class="logo-text">
 
 <h2>Aylin Education</h2>
 
-<p data-i18n="logoSubtitle">
+<p data-t="logo">
 
 Русский язык для детей
 
@@ -82,22 +51,19 @@ AE
 
 <nav id="nav">
 
-<a href="#about"
-data-i18n="navAbout">
+<a href="#about" data-t="nav1">
 
-О курсе
-
-</a>
-
-<a href="#program"
-data-i18n="navProgram">
-
-Программа
+О центре
 
 </a>
 
-<a href="#contact"
-data-i18n="navContact">
+<a href="#course" data-t="nav2">
+
+Курс
+
+</a>
+
+<a href="#contact" data-t="nav3">
 
 Контакты
 
@@ -105,34 +71,19 @@ data-i18n="navContact">
 
 </nav>
 
-<div class="actions">
+<div class="right">
 
-<div class="language">
+<div class="languages">
 
-<button class="lang active"
-data-lang="ru">
+<button class="lang active" data-lang="ru">RU</button>
 
-RU
+<button class="lang" data-lang="uz">UZ</button>
 
-</button>
-
-<button class="lang"
-data-lang="uz">
-
-UZ
-
-</button>
-
-<button class="lang"
-data-lang="en">
-
-EN
-
-</button>
+<button class="lang" data-lang="en">EN</button>
 
 </div>
 
-<button id="menuBtn">
+<button id="mobileBtn">
 
 <i class="fa-solid fa-bars"></i>
 
@@ -148,47 +99,35 @@ EN
 
 <div class="container hero-grid">
 
-<div class="hero-text">
+<div class="hero-left">
 
-<div class="badge"
-data-i18n="badge">
+<div class="badge" data-t="badge">
 
-Обучение детей с нуля
+Русский язык с нуля
 
 </div>
 
-<h1 data-i18n="heroTitle">
+<h1 data-t="title">
 
-Русский язык
-для детей
+Русский язык для детей
 
 </h1>
 
-<p data-i18n="heroText">
+<p data-t="hero">
 
-Современные занятия,
-интересные игры,
-разговорная практика,
-чтение,
-произношение
-и новые слова —
-всё в дружелюбной атмосфере.
+Мы обучаем детей русскому языку с помощью современных методик, игр, разговорной практики, чтения и весёлых занятий.
 
 </p>
 
-<div class="hero-buttons">
+<div class="buttons">
 
-<a href="#contact"
-class="primary"
-data-i18n="joinButton">
+<a href="#contact" class="gold" data-t="join">
 
 Записаться
 
 </a>
 
-<a href="#program"
-class="secondary"
-data-i18n="learnButton">
+<a href="#course" class="white" data-t="learn">
 
 Подробнее
 
@@ -196,19 +135,15 @@ data-i18n="learnButton">
 
 </div>
 
-<div class="hero-stats">
+<div class="features">
 
 <div>
 
-<h3>
+<i class="fa-solid fa-check"></i>
 
-100+
+<span data-t="f1">
 
-</h3>
-
-<span data-i18n="statStudents">
-
-учеников
+Обучение с нуля
 
 </span>
 
@@ -216,15 +151,11 @@ data-i18n="learnButton">
 
 <div>
 
-<h3>
+<i class="fa-solid fa-check"></i>
 
-5+
+<span data-t="f2">
 
-</h3>
-
-<span data-i18n="statYears">
-
-лет опыта
+Правильное произношение
 
 </span>
 
@@ -232,97 +163,47 @@ data-i18n="learnButton">
 
 <div>
 
-<h3>
+<i class="fa-solid fa-check"></i>
 
-100%
-
-</h3>
-
-<span data-i18n="statFun">
-
-интересные занятия
-
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="hero-cards">
-
-<div class="mini-card">
-
-<i class="fa-solid fa-volume-high"></i>
-
-<h3 data-i18n="card1Title">
-
-Произношение
-
-</h3>
-
-<p data-i18n="card1Text">
-
-Учимся правильно
-произносить русские слова.
-
-</p>
-
-</div>
-
-<div class="mini-card">
-
-<i class="fa-solid fa-book-open"></i>
-
-<h3 data-i18n="card2Title">
+<span data-t="f3">
 
 Чтение
 
-</h3>
-
-<p data-i18n="card2Text">
-
-От букв
-к уверенным предложениям.
-
-</p>
+</span>
 
 </div>
 
-<div class="mini-card">
+<div>
 
-<i class="fa-solid fa-comments"></i>
+<i class="fa-solid fa-check"></i>
 
-<h3 data-i18n="card3Title">
+<span data-t="f4">
 
-Разговорная речь
+Разговорная практика
 
-</h3>
-
-<p data-i18n="card3Text">
-
-Дети начинают
-говорить уверенно.
-
-</p>
+</span>
 
 </div>
 
-<div class="mini-card">
+</div>
 
-<i class="fa-solid fa-puzzle-piece"></i>
+</div>
 
-<h3 data-i18n="card4Title">
+<div class="hero-right">
 
-Игры
+<div class="hero-card">
+
+<i class="fa-solid fa-book-open"></i>
+
+<h3 data-t="cardTitle">
+
+Изучение русского языка
 
 </h3>
 
-<p data-i18n="card4Text">
+<p data-t="cardText">
 
-Весёлые упражнения
-и творческие занятия.
+Уроки проходят в дружелюбной атмосфере с играми, карточками и современными заданиями.
 
 </p>
 
@@ -338,88 +219,78 @@ data-i18n="learnButton">
 
 <div class="container">
 
-<h2 data-i18n="aboutTitle">
+<h2 data-t="aboutTitle">
 
-Почему выбирают Aylin Education?
+Почему выбирают Aylin Education?</h2>
 
-</h2>
+<div class="cards">
+    <div class="card">
 
-<p class="subtitle"
-data-i18n="aboutSubtitle">
+<i class="fa-solid fa-child-reaching"></i>
 
-Мы помогаем детям полюбить русский язык
-через современные методики обучения.
+<h3 data-t="a1">
 
-</p>
-
-<div class="about-grid">
-    <div class="about-card">
-
-<i class="fa-solid fa-heart"></i>
-
-<h3 data-i18n="aboutCard1Title">
-
-Дружелюбная атмосфера
+Индивидуальный подход
 
 </h3>
 
-<p data-i18n="aboutCard1Text">
+<p data-t="a1d">
 
-Каждый ребёнок чувствует себя уверенно и учится без страха ошибиться.
+Каждый ребёнок получает внимание и поддержку во время каждого занятия.
 
 </p>
 
 </div>
 
-<div class="about-card">
+<div class="card">
 
-<i class="fa-solid fa-gamepad"></i>
+<i class="fa-solid fa-puzzle-piece"></i>
 
-<h3 data-i18n="aboutCard2Title">
+<h3 data-t="a2">
 
 Обучение через игру
 
 </h3>
 
-<p data-i18n="aboutCard2Text">
+<p data-t="a2d">
 
-Игры, карточки, песни и интересные задания делают уроки увлекательными.
+Весёлые упражнения, карточки и игры помогают детям быстрее учиться.
 
 </p>
 
 </div>
 
-<div class="about-card">
+<div class="card">
+
+<i class="fa-solid fa-comments"></i>
+
+<h3 data-t="a3">
+
+Разговорная практика
+
+</h3>
+
+<p data-t="a3d">
+
+Дети начинают уверенно понимать и говорить по-русски.
+
+</p>
+
+</div>
+
+<div class="card">
 
 <i class="fa-solid fa-book"></i>
 
-<h3 data-i18n="aboutCard3Title">
+<h3 data-t="a4">
 
-Современная программа
-
-</h3>
-
-<p data-i18n="aboutCard3Text">
-
-Программа разработана специально для детей, которые начинают с нуля.
-
-</p>
-
-</div>
-
-<div class="about-card">
-
-<i class="fa-solid fa-user-group"></i>
-
-<h3 data-i18n="aboutCard4Title">
-
-Небольшие группы
+Чтение и письмо
 
 </h3>
 
-<p data-i18n="aboutCard4Text">
+<p data-t="a4d">
 
-Каждому ребёнку уделяется достаточно внимания.
+Изучение букв, чтения, слов и первых предложений.
 
 </p>
 
@@ -431,162 +302,97 @@ data-i18n="aboutSubtitle">
 
 </section>
 
-<section id="program">
+<section id="course">
 
 <div class="container">
 
-<h2 data-i18n="programTitle">
+<h2 data-t="courseTitle">
 
 Что изучают дети?
 
 </h2>
 
-<p class="subtitle"
-data-i18n="programSubtitle">
+<p class="subtitle" data-t="courseText">
 
-Наш курс помогает детям уверенно начать говорить по-русски.
+Полный курс русского языка для детей, которые начинают обучение с нуля.
 
 </p>
 
-<div class="program-grid">
+<div class="course-grid">
 
-<div class="program-card">
+<div class="course-card">
 
 <i class="fa-solid fa-volume-high"></i>
 
-<h3 data-i18n="program1Title">
+<h3 data-t="c1">
 
 Правильное произношение
 
 </h3>
 
-<p data-i18n="program1Text">
-
-Постановка звуков, букв, слогов и слов.
-
-</p>
-
 </div>
 
-<div class="program-card">
+<div class="course-card">
 
 <i class="fa-solid fa-book-open"></i>
 
-<h3 data-i18n="program2Title">
+<h3 data-t="c2">
 
 Чтение
 
 </h3>
 
-<p data-i18n="program2Text">
-
-От первых букв до уверенного чтения предложений.
-
-</p>
-
 </div>
 
-<div class="program-card">
-
-<i class="fa-solid fa-comments"></i>
-
-<h3 data-i18n="program3Title">
-
-Разговорная речь
-
-</h3>
-
-<p data-i18n="program3Text">
-
-Дети учатся общаться в повседневных ситуациях.
-
-</p>
-
-</div>
-
-<div class="program-card">
+<div class="course-card">
 
 <i class="fa-solid fa-language"></i>
 
-<h3 data-i18n="program4Title">
+<h3 data-t="c3">
 
 Новые слова
 
 </h3>
 
-<p data-i18n="program4Text">
+</div>
 
-Расширение словарного запаса в игровой форме.
+<div class="course-card">
 
-</p>
+<i class="fa-solid fa-comments"></i>
+
+<h3 data-t="c4">
+
+Разговорная речь
+
+</h3>
 
 </div>
 
-<div class="program-card">
+<div class="course-card">
 
-<i class="fa-solid fa-puzzle-piece"></i>
+<i class="fa-solid fa-pencil"></i>
 
-<h3 data-i18n="program5Title">
+<h3 data-t="c5">
+
+Письмо
+
+</h3>
+
+</div>
+
+<div class="course-card">
+
+<i class="fa-solid fa-face-smile"></i>
+
+<h3 data-t="c6">
 
 Игры и творчество
 
 </h3>
 
-<p data-i18n="program5Text">
-
-Творческие задания, песни и развивающие игры.
-
-</p>
-
-</div>
-
-<div class="program-card">
-
-<i class="fa-solid fa-star"></i>
-
-<h3 data-i18n="program6Title">
-
-Уверенность
-
-</h3>
-
-<p data-i18n="program6Text">
-
-Развитие уверенности в общении на русском языке.
-
-</p>
-
 </div>
 
 </div>
-
-</div>
-
-</section>
-
-<section class="cta">
-
-<div class="container">
-
-<h2 data-i18n="ctaTitle">
-
-Запишите ребёнка уже сегодня
-
-</h2>
-
-<p data-i18n="ctaText">
-
-Первый шаг к уверенному владению русским языком начинается здесь.
-
-</p>
-
-<a href="#contact"
-class="primary"
-data-i18n="ctaButton">
-
-Записаться
-
-</a>
 
 </div>
 
@@ -596,96 +402,22 @@ data-i18n="ctaButton">
 
 <div class="container">
 
-<h2 data-i18n="contactTitle">
+<h2 data-t="contactTitle">
 
-Контакты
+Запишитесь на курс
 
 </h2>
 
-<p class="subtitle"
-data-i18n="contactSubtitle">
+<p class="subtitle" data-t="contactText">
 
-Свяжитесь с нами удобным способом.
-
-</p>
-
-<div class="contact-card">
-
-<a href="https://t.me/halidekarademir"
-target="_blank"
-class="telegram">
-
-<i class="fa-brands fa-telegram"></i>
-
-@halidekarademir
-
-</a>
-
-<button id="copyPhone"
-class="phone">
-
-<i class="fa-solid fa-phone"></i>
-
-+998 94 266 22 27
-
-</button>
-
-<p id="copyMessage"
-data-i18n="copyHint">
-
-Нажмите на номер, чтобы скопировать его.
+Свяжитесь с нами через Telegram или по телефону.
 
 </p>
 
-</div>
-</div>
-
-</section>
-
-<footer>
-
-<div class="container footer-grid">
-
-<div>
-
-<h2>Aylin Education</h2>
-
-<p data-i18n="footerText">
-
-Русский язык для детей с нуля.
-
-</p>
-
-</div>
-
-<div class="footer-links">
-
-<a href="#about"
-data-i18n="navAbout">
-
-О курсе
-
-</a>
-
-<a href="#program"
-data-i18n="navProgram">
-
-Программа
-
-</a>
-
-<a href="#contact"
-data-i18n="navContact">
-
-Контакты
-
-</a>
-
-</div>
-
-<div class="footer-contact">
+<div class="contact-box">
 
 <a
+class="telegram"
 href="https://t.me/halidekarademir"
 target="_blank">
 
@@ -695,13 +427,37 @@ target="_blank">
 
 </a>
 
-<p>
+<button
+id="copyPhone"
+class="phone">
 
 +998 94 266 22 27
+
+</button>
+
+<p id="copyMessage" data-t="copyText">
+
+Нажмите на номер, чтобы скопировать его.
 
 </p>
 
 </div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container footer">
+
+<h3>Aylin Education</h3>
+
+<p data-t="footer">
+
+Русский язык для детей с нуля.
+
+</p>
 
 </div>
 
