@@ -1,100 +1,191 @@
-// =========================
+// ==========================
 // AYLIN EDUCATION
-// script.js (Part 1)
-// =========================
+// ==========================
 
-const t = {
+// Languages
+
+const translations={
 
 ru:{
 
-logoSubtitle:"Русский язык для детей",
-navAbout:"О курсе",
-navProgram:"Программа",
-navContact:"Контакты",
+logo:"Русский язык для детей",
 
-badge:"Обучение детей с нуля",
+nav1:"О центре",
+nav2:"Курс",
+nav3:"Контакты",
 
-heroTitle:"Русский язык для детей",
+badge:"Русский язык с нуля",
 
-heroText:"Современные занятия, игры, чтение, разговорная практика и правильное произношение.",
+title:"Русский язык для детей",
 
-joinButton:"Записаться",
-learnButton:"Подробнее",
+hero:"Мы обучаем детей русскому языку с помощью современных методик, игр, чтения, разговорной практики и весёлых занятий.",
+
+join:"Записаться",
+learn:"Подробнее",
+
+f1:"Обучение с нуля",
+f2:"Правильное произношение",
+f3:"Чтение",
+f4:"Разговорная практика",
+
+cardTitle:"Изучение русского языка",
+
+cardText:"Уроки проходят в дружелюбной атмосфере с играми, карточками и современными заданиями.",
 
 aboutTitle:"Почему выбирают Aylin Education?",
-aboutSubtitle:"Мы обучаем детей русскому языку с нуля.",
 
-programTitle:"Что изучают дети?",
-programSubtitle:"Весёлые занятия для детей любого возраста.",
+a1:"Индивидуальный подход",
+a1d:"Каждый ребёнок получает внимание и поддержку.",
 
-contactTitle:"Контакты",
-contactSubtitle:"Свяжитесь с нами удобным способом.",
+a2:"Обучение через игру",
+a2d:"Игры помогают быстрее изучать русский язык.",
 
-copyHint:"Нажмите на номер, чтобы скопировать его.",
+a3:"Разговорная практика",
+a3d:"Дети начинают уверенно говорить по-русски.",
 
-footerText:"Русский язык для детей."
+a4:"Чтение и письмо",
+a4d:"Изучение букв, слов и предложений.",
+
+courseTitle:"Что изучают дети?",
+
+courseText:"Полный курс русского языка для начинающих.",
+
+c1:"Правильное произношение",
+c2:"Чтение",
+c3:"Новые слова",
+c4:"Разговорная речь",
+c5:"Письмо",
+c6:"Игры и творчество",
+
+contactTitle:"Запишитесь на курс",
+
+contactText:"Свяжитесь с нами через Telegram или телефон.",
+
+copyText:"Нажмите на номер, чтобы скопировать.",
+
+footer:"Русский язык для детей с нуля."
 
 },
 
 en:{
 
-logoSubtitle:"Russian for Children",
-navAbout:"About",
-navProgram:"Program",
-navContact:"Contact",
+logo:"Russian for Children",
 
-badge:"Russian from Zero",
+nav1:"About",
+nav2:"Course",
+nav3:"Contact",
 
-heroTitle:"Russian for Children",
+badge:"Russian from Scratch",
 
-heroText:"Fun lessons, games, reading, speaking and pronunciation for kids.",
+title:"Russian for Children",
 
-joinButton:"Enroll",
-learnButton:"Learn More",
+hero:"We teach children Russian through games, speaking, reading and modern learning methods.",
+
+join:"Enroll",
+learn:"Learn More",
+
+f1:"From Scratch",
+f2:"Pronunciation",
+f3:"Reading",
+f4:"Speaking",
+
+cardTitle:"Learning Russian",
+
+cardText:"Friendly lessons with games and fun activities.",
 
 aboutTitle:"Why Choose Aylin Education?",
-aboutSubtitle:"We teach Russian to children from scratch.",
 
-programTitle:"What Will Children Learn?",
-programSubtitle:"Fun lessons for children of all ages.",
+a1:"Personal Approach",
+a1d:"Every child gets individual attention.",
 
-contactTitle:"Contact",
-contactSubtitle:"Get in touch with us.",
+a2:"Learning Through Play",
+a2d:"Games help children learn faster.",
 
-copyHint:"Click the phone number to copy it.",
+a3:"Speaking Practice",
+a3d:"Children start speaking confidently.",
 
-footerText:"Russian language for children."
+a4:"Reading & Writing",
+a4d:"Letters, words and sentences.",
+
+courseTitle:"What Will Children Learn?",
+
+courseText:"A complete Russian course for beginners.",
+
+c1:"Pronunciation",
+c2:"Reading",
+c3:"Vocabulary",
+c4:"Speaking",
+c5:"Writing",
+c6:"Games & Creativity",
+
+contactTitle:"Enroll Today",
+
+contactText:"Contact us via Telegram or phone.",
+
+copyText:"Click the number to copy.",
+
+footer:"Russian language for children."
 
 },
 
 uz:{
 
-logoSubtitle:"Bolalar uchun rus tili",
-navAbout:"Kurs",
-navProgram:"Dastur",
-navContact:"Aloqa",
+logo:"Bolalar uchun rus tili",
 
-badge:"Noldan o'qitish",
+nav1:"Markaz",
+nav2:"Kurs",
+nav3:"Aloqa",
 
-heroTitle:"Bolalar uchun rus tili",
+badge:"Noldan rus tili",
 
-heroText:"Qiziqarli darslar, o'yinlar, o'qish va talaffuz.",
+title:"Bolalar uchun rus tili",
 
-joinButton:"Ro'yxatdan o'tish",
-learnButton:"Batafsil",
+hero:"Bolalar uchun qiziqarli o'yinlar, o'qish, talaffuz va suhbat darslari.",
+
+join:"Ro'yxatdan o'tish",
+learn:"Batafsil",
+
+f1:"Noldan",
+f2:"Talaffuz",
+f3:"O'qish",
+f4:"Suhbat",
+
+cardTitle:"Rus tilini o'rganish",
+
+cardText:"Qiziqarli va zamonaviy darslar.",
 
 aboutTitle:"Nega Aylin Education?",
-aboutSubtitle:"Biz bolalarga rus tilini noldan o'rgatamiz.",
 
-programTitle:"Bolalar nimalarni o'rganadi?",
-programSubtitle:"Har yoshdagi bolalar uchun qiziqarli darslar.",
+a1:"Individual yondashuv",
+a1d:"Har bir bolaga alohida e'tibor.",
 
-contactTitle:"Aloqa",
-contactSubtitle:"Biz bilan bog'laning.",
+a2:"O'yin orqali o'rganish",
+a2d:"O'yinlar orqali tezroq o'rganish.",
 
-copyHint:"Telefon raqamini nusxalash uchun bosing.",
+a3:"Suhbat",
+a3d:"Erkin gapirishni o'rganish.",
 
-footerText:"Bolalar uchun rus tili."
+a4:"O'qish va yozish",
+a4d:"Harflar va so'zlar.",
+
+courseTitle:"Bolalar nimani o'rganadi?",
+
+courseText:"Boshlovchilar uchun to'liq kurs.",
+
+c1:"Talaffuz",
+c2:"O'qish",
+c3:"Yangi so'zlar",
+c4:"Suhbat",
+c5:"Yozish",
+c6:"O'yinlar",
+
+contactTitle:"Kursga yoziling",
+
+contactText:"Telegram yoki telefon orqali bog'laning.",
+
+copyText:"Raqamni nusxalash uchun bosing.",
+
+footer:"Bolalar uchun rus tili."
 
 }
 
@@ -102,78 +193,77 @@ footerText:"Bolalar uchun rus tili."
 
 function setLanguage(lang){
 
-document.querySelectorAll("[data-i18n]").forEach(el=>{
+document.querySelectorAll("[data-t]").forEach(el=>{
 
-const key=el.dataset.i18n;
+const key=el.dataset.t;
 
-if(t[lang] && t[lang][key]){
+if(translations[lang][key]){
 
-el.textContent=t[lang][key];
+el.textContent=translations[lang][key];
 
 }
 
 });
 
-localStorage.setItem("language",lang);
+localStorage.setItem("lang",lang);
 
 }
-// =========================
+// ==========================
 // PART 2
-// =========================
+// ==========================
 
-// Language buttons
+// ---------- Language Buttons ----------
 
-const buttons = document.querySelectorAll(".lang");
+const langButtons = document.querySelectorAll(".lang");
 
-buttons.forEach(button=>{
+langButtons.forEach(button=>{
 
 button.addEventListener("click",()=>{
 
-buttons.forEach(b=>b.classList.remove("active"));
+const lang=button.dataset.lang;
+
+setLanguage(lang);
+
+langButtons.forEach(b=>b.classList.remove("active"));
 
 button.classList.add("active");
-
-setLanguage(button.dataset.lang);
 
 });
 
 });
 
-// Load saved language
+// ---------- Load Saved Language ----------
 
-const savedLanguage = localStorage.getItem("language") || "ru";
+const saved=localStorage.getItem("lang") || "ru";
 
-setLanguage(savedLanguage);
+setLanguage(saved);
 
-buttons.forEach(button=>{
+langButtons.forEach(button=>{
 
-if(button.dataset.lang===savedLanguage){
+if(button.dataset.lang===saved){
 
 button.classList.add("active");
-
-}else{
-
-button.classList.remove("active");
 
 }
 
 });
 
-// Copy phone
+// ---------- Copy Phone ----------
 
-const phoneButton=document.getElementById("copyPhone");
+const phone=document.getElementById("copyPhone");
+const message=document.getElementById("copyMessage");
 
-const copyMessage=document.getElementById("copyMessage");
+if(phone){
 
-if(phoneButton){
+phone.addEventListener("click",async()=>{
 
-phoneButton.addEventListener("click",()=>{
+try{
 
-navigator.clipboard.writeText("+998942662227");
+await navigator.clipboard.writeText("+998942662227");
 
-const currentLanguage=localStorage.getItem("language")||"ru";
+const lang=localStorage.getItem("lang") || "ru";
 
-const messages={
+const copied={
 
 ru:"✅ Номер скопирован!",
 
@@ -183,35 +273,36 @@ uz:"✅ Telefon raqami nusxalandi!"
 
 };
 
-copyMessage.textContent=messages[currentLanguage];
+message.textContent=copied[lang];
+
+}catch(e){
+
+message.textContent="+998 94 266 22 27";
+
+}
 
 });
 
 }
 
-// Mobile menu
+// ---------- Mobile Menu ----------
 
-const menuBtn=document.getElementById("menuBtn");
-
+const mobileBtn=document.getElementById("mobileBtn");
 const nav=document.getElementById("nav");
 
-if(menuBtn && nav){
+if(mobileBtn){
 
-menuBtn.addEventListener("click",()=>{
+mobileBtn.addEventListener("click",()=>{
 
 nav.classList.toggle("open");
 
 });
 
 }
-// =========================
-// PART 3
-// Animations
-// =========================
 
-// Fade-in animation
+// ---------- Scroll Animation ----------
 
-const observer = new IntersectionObserver((entries)=>{
+const observer=new IntersectionObserver(entries=>{
 
 entries.forEach(entry=>{
 
@@ -224,95 +315,15 @@ entry.target.classList.add("show");
 });
 
 },{
-
 threshold:0.15
-
 });
 
-document.querySelectorAll("section,.about-card,.program-card,.mini-card").forEach(el=>{
+document.querySelectorAll(
+"section,.card,.course-card,.hero-card"
+).forEach(el=>{
 
 el.classList.add("hidden");
 
 observer.observe(el);
 
 });
-
-// Smooth navbar links
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
-
-anchor.addEventListener("click",function(e){
-
-e.preventDefault();
-
-const target=document.querySelector(this.getAttribute("href"));
-
-if(target){
-
-target.scrollIntoView({
-
-behavior:"smooth"
-
-});
-
-}
-
-});
-
-});
-
-// Active nav on scroll
-
-const sections=document.querySelectorAll("section");
-
-const navLinks=document.querySelectorAll("nav a");
-
-window.addEventListener("scroll",()=>{
-
-let current="";
-
-sections.forEach(section=>{
-
-const top=section.offsetTop-120;
-
-if(pageYOffset>=top){
-
-current=section.getAttribute("id");
-
-}
-
-});
-
-navLinks.forEach(link=>{
-
-link.classList.remove("active");
-
-if(link.getAttribute("href")==="#"+current){
-
-link.classList.add("active");
-
-}
-
-});
-
-});
-
-// Small logo animation
-
-const logo=document.querySelector(".logo");
-
-if(logo){
-
-logo.addEventListener("mouseenter",()=>{
-
-logo.style.transform="scale(1.04)";
-
-});
-
-logo.addEventListener("mouseleave",()=>{
-
-logo.style.transform="scale(1)";
-
-});
-
-}
